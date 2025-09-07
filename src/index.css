@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Priestacy';
+  src: url('/src/font/Priestacy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kugile';
+  src: url('/src/font/Kugile.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  font-family: 'Priestacy', sans-serif;
+  font-weight: 10; /* Plus fin */
+  font-size: 5rem; /* Plus grand */
+}
+
+.Kugile {
+  font-family: 'Kugile', sans-serif;
+  font-size: 1.5rem; /* Ajuste la taille selon tes besoins */
+  font-weight: normal;
+}
+
+.Kugile-nav {
+  font-family: 'Kugile', sans-serif;
+  font-weight: normal;
+}
