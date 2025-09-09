@@ -17,13 +17,14 @@ function Navbar() {
 
       {/* Menu Desktop */}
       <div className="hidden sm:flex space-x-8 text-gold font-semibold">
-        <Link to="/" className="hover:text-white transition">Accueil</Link>
-        <Link to="/services" className="hover:text-white transition">Prestations</Link>
-        <Link to="/join" className="hover:text-white transition">Rejoindre</Link>
-        <Link to="/about" className="hover:text-white transition">À propos</Link>
+        <Link to="/" className="hover:text-white transition">Home</Link>
+        <Link to="/services" className="hover:text-white transition">Services</Link>
+        <Link to="/join" className="hover:text-white transition">Join</Link>
+        <Link to="/about" className="hover:text-white transition">About</Link>
         <Link to="/faq" className="hover:text-white transition">FAQ</Link>
         <Link to="/contact" className="hover:text-white transition">Contact</Link>
       </div>
+
 
       {/* Hamburger Mobile */}
       <div className="sm:hidden">
@@ -64,10 +65,10 @@ function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center space-y-4 text-gold font-semibold">
-          <Link to="/" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Accueil</Link>
-          <Link to="/services" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Prestations</Link>
-          <Link to="/join" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Rejoindre</Link>
-          <Link to="/about" className="hover:text-white transition" onClick={() => setIsOpen(false)}>À propos</Link>
+          <Link to="/" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/services" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link to="/join" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Join</Link>
+          <Link to="/about" className="hover:text-white transition" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/faq" className="hover:text-white transition" onClick={() => setIsOpen(false)}>FAQ</Link>
           <Link to="/contact" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
