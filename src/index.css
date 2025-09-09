@@ -26,6 +26,12 @@ body {
   font-size: 5rem; /* Plus grand */
 }
 
+.logo-box {
+  font-family: 'Priestacy';
+  font-weight: 10; /* Plus fin */
+  font-size: 3rem; /* Plus grand */
+}
+
 .Kugile {
   font-family: 'Kugile', sans-serif;
   font-size: 1.5rem; /* Ajuste la taille selon tes besoins */
@@ -34,5 +40,19 @@ body {
 
 .Kugile-nav {
   font-family: 'Kugile', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.central-container {
+  max-width: 800px; /* Largeur maximale pour centrer le contenu */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 2rem; /* Ajouter un peu d'espace intérieur */
+  background-color: #000; /* Fond noir pour un look luxueux */
+  border: 2px solid #A17D42; /* Bordure dorée */
+  border-radius: 15px; /* Coins arrondis pour un look moderne */
+  box-shadow: 0 8px 15px rgba(255, 215, 0, 0.2); /* Ombre subtile dorée */
+  color: #A17D42; /* Texte doré */
+  font-family: 'Inter', sans-serif; /* Police élégante */
+  text-align: center; /* Centrer le texte */
+  line-height: 1.8; /* Espacement pour une meilleure lisibilité */
 }
