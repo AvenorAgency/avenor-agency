@@ -30,6 +30,7 @@ body {
   font-family: 'Priestacy';
   font-weight: 10; /* Plus fin */
   font-size: 3rem; /* Plus grand */
+  text-shadow: 0 0 10px #A17D42, 0 0 20px #A17D42, 0 0 30px #A17D42; /* Effet de glow doré */
 }
 
 .Kugile {
@@ -50,7 +51,7 @@ body {
   background-color: #000; /* Fond noir pour un look luxueux */
   border: 2px solid #A17D42; /* Bordure dorée */
   border-radius: 15px; /* Coins arrondis pour un look moderne */
-  box-shadow: 0 8px 15px rgba(255, 215, 0, 0.2); /* Ombre subtile dorée */
+  box-shadow: 0 8px 15px #A17D42; /* Ombre subtile dorée */
   color: #A17D42; /* Texte doré */
   font-family: 'Inter', sans-serif; /* Police élégante */
   text-align: center; /* Centrer le texte */
