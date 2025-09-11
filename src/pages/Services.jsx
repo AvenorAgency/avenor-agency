@@ -10,11 +10,15 @@ export default function Services() {
     >
       <div className="central-container">
         <h2 className="logo-box text-3xl text-gold mb-4">Our Services</h2><br />
-        <ul className="list-disc ml-6 space-y-2 Kugile-nav">
-          Full account management<br />
-          Marketing and fan acquisition<br />
-          Content creation and optimization<br />
-          24/7 support for creators<br />
+        <ul className="list-disc list-inside text-gold Kugile-nav">
+          <li>Full Account Management</li>
+          <li>Marketing Strategy & Fan Acquisition</li>
+          <li>Content Creation & Optimization</li>
+          <li>Revenue Optimization</li>
+          <li>Privacy & Security Management</li>
+          <li>Analytics & Custom Reporting</li>
+          <li>Private Messaging Management (DMs)</li>
+          <li>24/7 Creator Support</li>
         </ul>
       </div>
     </motion.div>

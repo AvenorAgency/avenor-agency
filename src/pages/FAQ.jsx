@@ -1,6 +1,28 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "How can I join the agency?",
+      answer: "Simply fill out the form in the Join section.",
+    },
+    {
+      question: "What services do you offer?",
+      answer: "We provide full management, marketing, and content creation.",
+    },
+    {
+      question: "Are there any entry fees?",
+      answer: "No, our model works on revenue sharing.",
+    },
+  ];
+
   return (
     <motion.div
       className="p-8"
@@ -11,18 +33,26 @@ export default function FAQ() {
       <div className="central-container">
         <h2 className="logo-box text-3xl text-gold mb-4">FAQ</h2><br />
         <div className="space-y-4 Kugile-nav">
-          <div>
-            <h3 className="font-semibold">How can I join the agency?</h3>
-            <p>Simply fill out the form in the Join section.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold">What services do you offer?</h3>
-            <p>We provide full management, marketing, and content creation.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold">Are there any entry fees?</h3>
-            <p>No, our model works on revenue sharing.</p>
-          </div>
+          {faqs.map((faq, index) => (
+            <div key={index} className="faq-item border-b border-gold pb-4">
+              <div
+                className="faq-question flex justify-between items-center cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
+                <h3 className="font-semibold">{faq.question}</h3>
+                <span
+                  className={`faq-arrow transition-transform duration-300 ${
+                    openIndex === index ? "rotate-90" : "rotate-0"
+                  }`}
+                >
+                  ᐳ
+                </span>
+              </div>
+              {openIndex === index && (
+                <p className="Kugile-nav faq-answer mt-2 text-white">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </motion.div>

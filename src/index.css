@@ -57,3 +57,112 @@ body {
   text-align: center; /* Centrer le texte */
   line-height: 1.8; /* Espacement pour une meilleure lisibilité */
 }
+
+.section-title {
+  font-family: 'Kugile', sans-serif;
+  font-size: 1.5rem; /* Taille du texte */
+  font-weight: bold; /* Texte plus épais */
+  color: #A17D42; /* Couleur dorée */
+  text-shadow: 0 0 20px #A17D42; /* Effet de glow */
+  margin-bottom: 1rem; /* Espacement en bas */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%; /* 5% de la hauteur de la page */
+  display: flex;
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center;
+  padding: 0 1rem; /* Ajoute un peu d'espace intérieur */
+  gap: 1rem; /* Espacement entre les boutons */
+}
+
+.footer-left {
+  color: #A17D42; /* Texte doré */
+  font-size: 0.9rem; /* Taille du texte */
+  font-family: 'Inter', sans-serif; /* Police élégante */
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #A17D42; /* Fond doré */
+  color: #000; /* Icônes noires */
+  border-radius: 50%; /* Boutons ronds */
+  text-decoration: none;
+  font-size: 1.2rem; /* Taille des icônes */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer a:hover {
+  transform: scale(1.2); /* Zoom au survol */
+  box-shadow: 0 0 10px #A17D42, 0 0 20px #A17D42; /* Glow au survol */
+}
+
+footer a img {
+  width: 20px; /* Taille des logos */
+  height: 20px;
+}
+
+/* Images courbes overlay */
+.courbe-overlay {
+  position: fixed;
+  bottom: 0;
+  width: 25vw;
+  max-width: 1000px;
+  min-width: 150px;
+  z-index: 1000;
+  pointer-events: none;
+  animation: floating 6s ease-in-out infinite;
+}
+
+.courbe-gauche {
+  left: 0;
+  animation-delay: 0s;
+}
+
+.courbe-droite {
+  right: 0;
+  animation-delay: 2s;
+}
+
+@keyframes floating {
+  0%   { transform: translateY(0) scaleX(1); }
+  50%  { transform: translateY(15px) scaleX(1); }
+  100% { transform: translateY(0) scaleX(1); }
+}
+
+@media (max-width: 600px) {
+  .courbe-overlay {
+    display: none; /* Cache les images des courbes sur téléphone */
+  }
+
+  footer {
+  background-color :#000;
+  }
+
+}
+
+.faq-item {
+  border-bottom: 1px solid #A17D42; /* Ligne dorée */
+}
+
+.faq-question {
+  cursor: pointer;
+}
+
+.faq-arrow {
+  transition: transform 0.3s ease; /* Animation de rotation */
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #A17D42; /* Texte blanc */
+  text-shadow: 0 0 10px #A17D42, 0 0 20px #A17D42;
+}
