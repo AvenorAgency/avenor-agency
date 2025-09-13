@@ -10,51 +10,39 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "How can I join the agency?",
-      answer: "Simply fill out the form in the Join section.",
-    },
-    {
-      question: "What services do you offer?",
-      answer: "We provide full management, marketing, and content creation.",
-    },
-    {
-      question: "Are there any entry fees?",
-      answer: "No, our model works on revenue sharing.",
-    },
-    {
       question: "Who can join your agency?",
       answer:
-        "We work with motivated models, whether they are beginners or already active on OnlyFans. We prioritize quality over quantity: we do not aim to recruit as many models as possible, but to provide personalized support to maximize each model’s chances of success.",
+        "We work with motivated models, whether they are beginners or already active on OnlyFans. We prioritize quality over quantity: we don’t aim to recruit as many models as possible, but to provide personalized support to maximize each model’s chances of success.",
     },
     {
       question: "Do I need to already have an OnlyFans account to join?",
       answer:
-        "No. We can assist you from the creation of your account or help optimize an existing one.",
+        "No. We can guide you from the creation of your account or help optimize an existing one.",
     },
     {
-      question: "What services do you provide?",
+      question: "What services do you offer?",
       answer:
         "We handle account management, marketing strategy, content creation, revenue optimization, and even subscriber message management.",
     },
     {
       question: "How much does it cost to work with you?",
       answer:
-        "We mainly work on a percentage basis: we only earn if you earn. This ensures transparent collaboration with no hidden fees.",
+        "We mainly work on a percentage basis: we only earn if you earn. This ensures a transparent collaboration with no hidden fees.",
     },
     {
       question: "Do I have to show my face?",
       answer:
-        "Not necessarily. Many models succeed with partial or anonymous identities. We adapt the strategy according to your boundaries and comfort.",
+        "Not necessarily. Many models succeed with a partial or anonymous identity. We adapt the strategy according to your boundaries and comfort.",
     },
     {
       question: "How do you protect my privacy?",
       answer:
-        "We strictly respect our models’ privacy. All data is secured and no personal information is shared without your consent.",
+        "We strictly respect our models’ privacy. All data is secured, and no personal information is shared without your consent.",
     },
     {
       question: "Where are you based?",
       answer:
-        "Our agency is based in Switzerland, but we work with models from all over the world.",
+        "Our agency is based in Switzerland, but we work with models worldwide.",
     },
     {
       question: "How can I apply to join the agency?",
