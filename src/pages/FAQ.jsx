@@ -47,7 +47,7 @@ export default function FAQ() {
     {
       question: "How can I apply to join the agency?",
       answer:
-        "You just need to fill out the application form on our website or contact us directly via [your contact method]. We receive many applications, but each profile is carefully reviewed.",
+        "You just need to fill out the application form on our website or contact us directly via the contact page. We receive many applications, but each profile is carefully reviewed.",
     },
   ];
 
